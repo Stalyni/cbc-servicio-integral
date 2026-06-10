@@ -1,0 +1,5 @@
+const cards = document.querySelectorAll('.catalog-card');
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{ if(entry.isIntersecting){ entry.target.classList.add('show'); }});
+},{threshold:.15});
+cards.forEach(card=>observer.observe(card));

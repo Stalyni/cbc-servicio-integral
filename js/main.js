@@ -1,0 +1,1 @@
+const btn=document.getElementById('menuBtn');const links=document.getElementById('navLinks');if(btn){btn.addEventListener('click',()=>links.classList.toggle('active'));}const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')})},{threshold:.15});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
