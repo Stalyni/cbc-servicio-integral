@@ -6,3 +6,58 @@
 .full-image img, .poster-clean img, .photo img{display:block;width:100%;max-width:100%;height:auto;object-fit:contain;object-position:center;border-radius:18px;border:1px solid #d79b16;box-shadow:0 0 30px #000;background:#050505;image-rendering:auto}
 .photo{overflow:visible;background:#050505;border-radius:18px}
 @media(max-width:560px){.full-image,.poster-clean{width:94%;margin:24px auto}.photo img{border-radius:14px}}
+
+/* Ajuste: Clientes separados de sectores */
+.section-intro{
+  max-width:760px;
+  margin-top:-6px;
+}
+.client-logos{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+  gap:18px;
+  align-items:stretch;
+  margin-top:28px;
+}
+.client-logo{
+  min-height:150px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+  border:1px solid rgba(245,189,34,.65);
+  border-radius:18px;
+  background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
+  box-shadow:0 0 22px rgba(0,0,0,.55), inset 0 0 22px rgba(245,189,34,.05);
+  transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.client-logo:hover{
+  transform:translateY(-7px) scale(1.02);
+  border-color:#f5bd22;
+  box-shadow:0 0 28px rgba(245,189,34,.26), inset 0 0 24px rgba(245,189,34,.08);
+}
+.client-logo img{
+  width:160px;
+  height:160px;
+  max-width:100%;
+  object-fit:contain;
+  display:block;
+  filter:drop-shadow(0 8px 16px rgba(0,0,0,.45));
+}
+.sectors{
+  grid-template-columns:repeat(4,1fr);
+}
+.sectors div{
+  background:linear-gradient(145deg,#141414,#050505);
+}
+@media(max-width:900px){
+  .sectors{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:460px){
+  .client-logos{grid-template-columns:repeat(2,1fr);gap:12px}
+  .client-logo{min-height:118px;padding:12px;border-radius:14px}
+  .client-logo img{width:96px;height:96px}
+  .sectors{grid-template-columns:1fr}
+}
+
+.brand{display:flex;align-items:center}.brand img{display:block;width:160px;height:64px;object-fit:contain;object-position:left center}@media(max-width:420px){.brand img{width:125px;height:52px}}
