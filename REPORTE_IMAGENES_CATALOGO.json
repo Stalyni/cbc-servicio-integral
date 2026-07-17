@@ -1,0 +1,39 @@
+{
+  "imagenes_recibidas": 38,
+  "productos_en_catalogo": 20,
+  "imagenes_reales_integradas": 14,
+  "codigos_sin_imagen_descargada": [
+    "FF5226",
+    "FF5816",
+    "LF14001NN",
+    "HF6560",
+    "FS19551",
+    "AF821M"
+  ],
+  "imagenes_descargadas_no_usadas_por_no_existir_en_productos_json": [
+    "AF1811",
+    "AF25308",
+    "AF25497",
+    "AF25557",
+    "AF25558",
+    "AF26116",
+    "AF26387",
+    "AF421M",
+    "F14000NN",
+    "FF5327",
+    "FF5386",
+    "FF5421",
+    "FF5612",
+    "FF5687",
+    "FS1000",
+    "FS1280",
+    "FS19732",
+    "FS20007",
+    "FS36210",
+    "LF16045",
+    "LF3349",
+    "LF3478",
+    "LF3776",
+    "LF678"
+  ]
+}
