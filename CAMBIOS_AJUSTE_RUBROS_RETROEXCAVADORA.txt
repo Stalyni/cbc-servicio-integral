@@ -1,0 +1,16 @@
+AJUSTES IMPLEMENTADOS
+
+- Eliminadas de Rubros principales:
+  * Seguridad industrial
+  * Herramientas e insumos
+  * Tecnología
+
+- Eliminadas de la barra superior:
+  * Tecnología
+  * Construcción
+  * Iluminación
+
+- Reemplazada la imagen anterior de la retroexcavadora JCB por la fotografía original enviada.
+- La nueva fotografía fue integrada como SVG y se muestra completa.
+- Localización cambiada a "Santiago de Chile" en contacto y pie de página.
+- El resto del proyecto se conservó.

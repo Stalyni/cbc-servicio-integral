@@ -1,0 +1,9 @@
+CAMBIOS IMPLEMENTADOS
+- Nueva sección Arriendo de maquinaria de apoyo.
+- Historias de WhatsApp recortadas y separadas por equipo.
+- Todas las imágenes nuevas integradas como SVG.
+- Retroexcavadora JCB 3CX 2023 añadida con ficha de capacidades.
+- Lámina general de equipos conservada e implementada.
+- Distribuidores autorizados trasladados al pie de página.
+- Pie antiguo reemplazado por footer CBC negro/amarillo.
+- Catálogo y productos existentes no fueron eliminados.

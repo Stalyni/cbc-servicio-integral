@@ -213,3 +213,128 @@
   .authorized-promise{flex-direction:column;gap:10px}
   .authorized-promise__icon{width:38px;height:38px;flex-basis:38px;font-size:23px}
 }
+
+
+/* Arriendo de maquinaria */
+.machinery-rental{padding-top:88px}
+.machinery-rental__heading{max-width:900px;margin-bottom:34px}
+.machinery-rental__heading h2{margin-bottom:12px}
+.machinery-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:22px;
+}
+.machine-card{
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  border:1px solid rgba(245,189,34,.78);
+  border-radius:18px;
+  background:linear-gradient(145deg,#121212,#050505);
+  box-shadow:0 18px 35px rgba(0,0,0,.5);
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+.machine-card:hover{
+  transform:translateY(-7px);
+  border-color:#f5bd22;
+  box-shadow:0 20px 42px rgba(245,189,34,.16);
+}
+.machine-card>img,.machine-card__image img{
+  display:block;
+  width:100%;
+  height:460px;
+  object-fit:contain;
+  object-position:center;
+  background:#f4f4f4;
+}
+.machine-card>a{
+  margin-top:auto;
+  display:block;
+  padding:15px 18px;
+  color:#050505;
+  background:#f5bd22;
+  text-decoration:none;
+  text-align:center;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:.7px;
+}
+.machine-card>a:hover{background:#ffd257}
+.machine-card--custom{grid-row:span 1}
+.machine-card__image{background:#eee}
+.machine-card__image img{height:300px}
+.machine-card__specs{padding:22px}
+.machine-card__specs span{
+  display:inline-block;
+  margin-bottom:7px;
+  color:#f5bd22;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+.machine-card__specs h3{margin:0 0 12px;font-size:25px;text-transform:uppercase}
+.machine-card__specs ul{margin:0;padding-left:20px;color:#ddd;line-height:1.7}
+.rental-poster{
+  display:grid;
+  grid-template-columns:minmax(300px,560px) 1fr;
+  gap:38px;
+  align-items:center;
+  margin-top:48px;
+  padding:30px;
+  border:1px solid rgba(245,189,34,.7);
+  border-radius:22px;
+  background:radial-gradient(circle at 15% 30%,rgba(245,189,34,.12),transparent 45%),#0b0b0b;
+}
+.rental-poster img{
+  display:block;
+  width:100%;
+  max-height:760px;
+  object-fit:contain;
+  border-radius:14px;
+  background:#fff;
+}
+.rental-poster h3{margin:0 0 15px;font-size:clamp(27px,4vw,45px);text-transform:uppercase}
+.rental-poster .big-btn{display:inline-block;margin-top:12px}
+
+/* Footer CBC: distribuidores autorizados + contacto */
+.site-footer{
+  padding:50px 3% 0;
+  text-align:initial;
+  background:
+    radial-gradient(circle at 50% 0,rgba(245,189,34,.11),transparent 38%),
+    linear-gradient(180deg,#0b0b0b,#000);
+  border-top:1px solid #d79b16;
+}
+.site-footer .footer-authorized{width:min(1420px,100%);margin:0 auto}
+.site-footer .authorized-heading h2{color:#f5bd22}
+.site-footer .authorized-logos{margin-bottom:0}
+.site-footer .authorized-logo{background:linear-gradient(145deg,#161616,#060606)}
+.site-footer .authorized-logo img{background:transparent}
+.footer-bottom{
+  width:min(1420px,100%);
+  margin:38px auto 0;
+  padding:25px 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:28px;
+  border-top:1px solid rgba(245,189,34,.45);
+  text-align:left;
+}
+.footer-bottom img{width:150px;height:78px;object-fit:contain;border:0;border-radius:0}
+.footer-bottom strong{display:block;color:#f5bd22;font-size:clamp(21px,3vw,34px);text-transform:uppercase}
+.footer-bottom p{margin:7px 0 0;color:#ddd;text-transform:none;font-weight:600}
+
+@media(max-width:1050px){
+  .machinery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rental-poster{grid-template-columns:1fr}
+  .rental-poster img{max-height:900px}
+}
+@media(max-width:650px){
+  .machinery-grid{grid-template-columns:1fr}
+  .machine-card>img{height:auto;max-height:620px}
+  .machine-card__image img{height:260px}
+  .rental-poster{padding:16px}
+  .footer-bottom{flex-direction:column;text-align:center}
+}
